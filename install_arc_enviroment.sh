@@ -12,7 +12,7 @@ wget https://aka.ms/azcmagent -O ~/Install_linux_azcmagent.sh
 bash ~/Install_linux_azcmagent.sh
 
 echo -e "\n### Config Arc Agent"
-echo -e "\n>>> Please go to the Azure GUI & add a server with Azure Arc & Get the azcmagent connect command"
+echo -e "\n>>> Please go to the Azure GUI & add a server with Azure Arc & Get the azcmagent connect command and save the file into bitwarden"
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Edge CLI & insert the azcmagent connect command"
