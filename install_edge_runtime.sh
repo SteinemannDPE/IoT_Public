@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "### Edge Hub Setup ##############################################################"
-echo "#################################################################################"
+echo "Detailed info: https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=azure-portal%2Cubuntu"
 
 # System Update
 echo -e "\n### System update"
@@ -19,7 +19,7 @@ file /etc/apt/trusted.gpg.d/microsoft-prod.gpg
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n### Install Edge"
-apt-get install aziot-edge
+apt-get install aziot-edge defender-iot-micro-agent-edge
 
 echo -e "\n### Check Edge Version"
 iotedge -V
@@ -27,15 +27,16 @@ read -p ">>> Press ENTER to continue... "
 
 echo -e "\n### Config Edge"
 echo -e "\n>>> Please go to the Azure CLI & Create the device with the following sample command:"
-echo "az iot hub device-identity create --device-id spectra-dev-hmi --hub-name iothub-stdpe-iot-dev --edge-enabled"
+echo "az account set --subscription ec95e20b-638e-493b-93b9-a78f54cbe6b2"
+echo "az iot hub device-identity create --device-id <machine identifier> --hub-name iothub-stdpe-iot-dev --edge-enabled"
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Azure CLI & Get the connection string with the following sample command:"
-echo "az iot hub device-identity connection-string show --device-id spectra-dev-hmi --hub-name iothub-stdpe-iot-dev"
+echo "az iot hub device-identity connection-string show --device-id <machine identifier> --hub-name iothub-stdpe-iot-dev"
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Edge CLI & insert the connection string with the following sample command:"
-echo "iotedge config mp --connection-string 'HostName=iothub-stdpe-iot-dev.azure-devices.net;DeviceId=spectra-dev-hmi;SharedAccessKey=xyz='"
+echo "iotedge config mp --connection-string <connection-string>
 read -p ">>> Press ENTER to continue... "
 
 iotedge config apply -c '/etc/aziot/config.toml'
