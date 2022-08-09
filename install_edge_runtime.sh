@@ -32,7 +32,7 @@ echo "az iot hub device-identity create --device-id <machine identifier> --hub-n
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Azure CLI & Get the connection string with the following sample command:"
-echo "az iot hub device-identity connection-string show --device-id <machine identifier> --hub-name iothub-stdpe-iot-dev"
+echo "az iot hub device-identity connection-string show --device-id <machine identifier> --hub-name iothub-stdpe-iot-prod"
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Edge CLI & insert the connection string with the following sample command:"
