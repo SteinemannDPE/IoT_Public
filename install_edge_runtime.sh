@@ -36,7 +36,7 @@ echo "az iot hub device-identity connection-string show --device-id <machine ide
 read -p ">>> Press ENTER to continue... "
 
 echo -e "\n>>> Please go to the Edge CLI & insert the connection string with the following sample command:"
-echo "iotedge config mp --connection-string <connection-string>
+echo "iotedge config mp --connection-string <connection-string>"
 read -p ">>> Press ENTER to continue... "
 
 iotedge config apply -c '/etc/aziot/config.toml'
