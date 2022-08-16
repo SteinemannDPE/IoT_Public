@@ -1563,7 +1563,7 @@ FNU,4607573,FNU,Formazin nephelometric unit
 NTU,5133397,NTU,Nephelometric turbidity unit
 DPE1,10000000,0.1 °C,one tenth of a degree Celsius
 DPE2,10000001,Sheets/h,Sheets per hour
-DPE2,10000002,Sheets,Number of Sheets 
-DPE2,10000003,Steps/mm,Steps per milimeter
-DPE3,10000004,mPa/s,mili Pascal per seconds
-DPE4,10000005,1/kg,per kilo
+DPE3,10000002,Sheets,Number of Sheets 
+DPE4,10000003,Steps/mm,Steps per milimeter
+DPE5,10000004,mPa/s,mili Pascal per seconds
+DPE6,10000005,1/kg,per kilo
