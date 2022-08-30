@@ -9,9 +9,10 @@ apt-get upgrade
 
 echo -e "\n### Prepare Edge Setup"
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
-apt-get update
-apt-get install moby-engine
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install moby-engine
 
 echo -e "\n### Check Edge Setup (Repository & GPG Key)"
 cat /etc/apt/sources.list.d/microsoft-prod.list
