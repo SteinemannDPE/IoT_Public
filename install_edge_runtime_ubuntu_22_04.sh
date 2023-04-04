@@ -11,7 +11,7 @@ echo -e "\n### Prepare Edge Setup"
 echo "If you get errors when you install the Moby container engine, verify your Linux kernel for Moby compatibility."
 echo "curl -ssl https://raw.githubusercontent.com/moby/moby/master/contrib/check-config.sh -o check-config.sh"
 echo "chmod +x check-config.sh"
-echo "./check-config.sh""
+echo "./check-config.sh"
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
