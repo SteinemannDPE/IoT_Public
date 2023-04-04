@@ -15,6 +15,13 @@ echo -e "\n### Config Arc Agent"
 echo -e "\n>>> Please go to the Azure GUI & add a server with Azure Arc & Get the azcmagent connect command and save the file into bitwarden"
 read -p ">>> Press ENTER to continue... "
 
+echo -e "\n>>> Please download and copy the 'OnboardingScript.sh' to '/home/useradmin'"
+read -p ">>> Press ENTER to continue... "
+
+sudo chmod +x OnboardingScript.sh
+sed -i -e 's/\r$//' OnboardingScript.sh ./OnboardingScript.sh
+sudo ./OnboardingScript.sh
+
 echo -e "\n>>> Please go to the Edge CLI & insert the azcmagent connect command"
 read -p ">>> Press ENTER to continue... "
 
