@@ -52,6 +52,11 @@ iotedge system status
 iotedge list
 # iotedge check
 # iotedge system logs
+
+echo - "\n### run docker without root permission"
+sudo groupadd docker
+sudo usermod -aG docker useradmin
+
 read -p ">>> Press ENTER to continue... "
 
 echo "### Done :) #####################################################################"
