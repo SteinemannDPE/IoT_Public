@@ -31,7 +31,7 @@ read -p ">>> Press ENTER to continue... "
 
 echo -e "\n### Install Azure Monitor Agent"
 echo -e "\n>>> Please go to the Azure GUI & create data collection rule (Azure Monitor - Settings/Data Collection Rules)"
-echo -e "\n>>> Set the update maintenance scheduler (Azure Maintenance Configurator - Settings/Machines)
+echo -e "\n>>> Set the update maintenance scheduler (Azure Maintenance Configurator - Settings/Machines)"
 read -p ">>> Press ENTER to continue... "
 
 # ps -ef | grep omsagent
