@@ -4,7 +4,7 @@ C25,4403765,mrad,milliradian
 B97,4340023,µrad,microradian
 DD,17476,°,degree [unit of angle]
 D61,4470321,',minute [unit of angle]
-D62,4470322,"""",second [unit of angle]
+"D62,4470322,"""""""",second [unit of angle]"
 A91,4274481,gon,gon
 M43,5059635,mil,mil
 M44,5059636,rev,revolution
@@ -1569,3 +1569,4 @@ DPE5,10000004,mPa/s,mili Pascal per seconds
 DPE6,10000005,1/kg,per kilo
 DPE7,10000006, ,n/a
 DPE8,10000007,µm/inc,micrometre per increments
+DPE9,10000008,µm/m,micrometre per metre
